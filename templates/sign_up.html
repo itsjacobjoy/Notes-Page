@@ -1,0 +1,30 @@
+{% extends "base.html" %} <!-- This allows you to the same base across all pages -->
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <h3 align="center">Sign Up</h3>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"/>
+        <!-- We need the name variable in the input type to represent them in the backend -->
+    </div>
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter full name"/>
+        <!-- We need the name variable in the input type to represent them in the backend -->
+    </div>
+    <div class="form-group">
+        <label for="password1">Password</label>
+        <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter Password"/>
+        <!-- We need the name variable in the input type to represent them in the backend -->
+    </div>
+    <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="Re-enter Password"/>
+        <!-- We need the name variable in the input type to represent them in the backend -->
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+{% endblock %}
